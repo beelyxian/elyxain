@@ -22,11 +22,24 @@ function App() {
         <h1>We are launching soon!</h1>
         <p>Stay tuned for our exciting products.</p>
         <div className="marketplace-links">
-          <a href="https://www.amazon.in/Elyxian-Gluta-Vita-Face-Serum/dp/B0CZXQM1GK" target="_blank" rel="noopener noreferrer">
-            <img src={amazonlogo}></img>
+           {/* Amazon Button */}
+           <a
+            href="https://www.amazon.in/Elyxian-Gluta-Vita-Face-Serum/dp/B0CZXQM1GK"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn amazon-btn"
+          >
+            Buy on Amazon
           </a>
-          <a href="https://www.flipkart.com/elyxian-gluta-vita-face-serum-30ml-glutathione-vitamin-c-kojic-hyaluronic-acid/p/itmc1ea4ce43727b?pid=BSTGZD8RJXG4GDG4&lid=LSTBSTGZD8RJXG4GDG41O05JN&marketplace=FLIPKART&cmpid=content_skin-treatment_8965229628_gmc" target="_blank" rel="noopener noreferrer">
-          <img src={flipkartlogo}></img>
+
+          {/* Flipkart Button */}
+          <a
+            href="https://www.flipkart.com/elyxian-gluta-vita-face-serum-30ml-glutathione-vitamin-c-kojic-hyaluronic-acid/p/itmc1ea4ce43727b?pid=BSTGZD8RJXG4GDG4&lid=LSTBSTGZD8RJXG4GDG41O05JN&marketplace=FLIPKART&cmpid=content_skin-treatment_8965229628_gmc"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="btn flipkart-btn"
+          >
+            Buy on Flipkart
           </a>
         </div>
       </div>
