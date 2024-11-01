@@ -49,7 +49,7 @@ body, html {
 .content {
   text-align: center;
   color: white;
-  margin-top: 200px;  /* Push content below the navbar */
+  margin-top: 150px;  /* Push content below the navbar */
 }
 
 h1 {
