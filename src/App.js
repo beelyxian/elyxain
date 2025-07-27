@@ -1,50 +1,69 @@
-// src/App.js
-import React from "react";
-import './App.css';
+// // src/App.js
+// import React from "react";
+// import './App.css';
 
+// function App() {
+//   return (
+//     <div className="container">
+//       <h1 className="brand">🌱 Elyxian Seeds</h1>
+//       <p className="coming-soon">WE ARE COMING SOON...</p>
+//       <p className="subtext">We’re bringing premium superfoods to your doorstep</p>
+
+//       <div className="products">
+//         <p>🥜 Sunflower Seeds</p>
+//         <p>🌾 Flax Seeds</p>
+//         <p>🎃 Pumpkin Seeds</p>
+//         <p>🌱 Chia Seeds</p>
+
+//       </div>
+
+//       <p className="dm-text">📦 DM us to Pre-order</p>
+
+//       <div className="buttons">
+//         <a
+//           href="https://wa.me/91XXXXXXXXXX"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//           className="whatsapp"
+//         >
+//           WhatsApp Now
+//         </a>
+//         <a
+//           href="https://instagram.com/your_insta"
+//           target="_blank"
+//           rel="noopener noreferrer"
+//           className="instagram"
+//         >
+//           Instagram
+//         </a>
+//       </div>
+
+//       <footer className="footer">📍 Made with ❤️ by Elyxian</footer>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+// src/App.js
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './compo/Navbar';
+import Home from './pages/home';
+import Footer from './compo/Footer';
 function App() {
   return (
-    <div className="container">
-      <h1 className="brand">🌱 Elyxian Seeds</h1>
-      <p className="coming-soon">WE ARE COMING SOON...</p>
-      <p className="subtext">We’re bringing premium superfoods to your doorstep</p>
-
-      <div className="products">
-        <p>🥜 Sunflower Seeds</p>
-        <p>🌾 Flax Seeds</p>
-        <p>🎃 Pumpkin Seeds</p>
-        <p>🌱 Chia Seeds</p>
-
-      </div>
-
-      <p className="dm-text">📦 DM us to Pre-order</p>
-
-      <div className="buttons">
-        <a
-          href="https://wa.me/91XXXXXXXXXX"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="whatsapp"
-        >
-          WhatsApp Now
-        </a>
-        <a
-          href="https://instagram.com/your_insta"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="instagram"
-        >
-          Instagram
-        </a>
-      </div>
-
-      <footer className="footer">📍 Made with ❤️ by Elyxian</footer>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 
 export default App;
-
 
 
 

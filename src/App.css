@@ -8,6 +8,13 @@ body {
   justify-content: center;
   height: 100vh;
 }
+/* src/App.css */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f6fff5;
+  color: #2d4739;
+}
 
 .container {
   padding: 40px 20px;
