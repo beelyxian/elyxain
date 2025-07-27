@@ -1,11 +1,8 @@
-import { View, Text } from 'react-native'
 import React from 'react'
 
-const contect = () => {
+function contect() {
   return (
-    <View>
-      <Text>contect</Text>
-    </View>
+    <div>contect</div>
   )
 }
 

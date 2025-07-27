@@ -1,11 +1,8 @@
-import { View, Text } from 'react-native'
 import React from 'react'
 
-const about = () => {
+function about() {
   return (
-    <View>
-      <Text>about</Text>
-    </View>
+    <div>about</div>
   )
 }
 

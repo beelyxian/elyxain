@@ -1,11 +1,8 @@
-import { View, Text } from 'react-native'
 import React from 'react'
 
-const product = () => {
+function product() {
   return (
-    <View>
-      <Text>product</Text>
-    </View>
+    <div>product</div>
   )
 }
 
